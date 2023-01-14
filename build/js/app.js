@@ -1,6 +1,6 @@
 
 const almacenadorProyectos = document.querySelector('.proyecto');
-
+const menuMobile           = document.querySelector('.menu-mobile');
 const proyectos = [
      proyecto1 = 
      {
@@ -51,6 +51,22 @@ const crearAreaProyectos = () =>{
                almacenadorProyectos.appendChild(proyecto); 
           });
 } 
+
+menuMobile.addEventListener('click',() => {
+     navegacion = document.querySelector('.header-navegacion');
+
+     if(navegacion.classList.contains('mostrar')){
+          navegacion.classList.remove('mostrar');
+     }else{
+          navegacion.classList.add('mostrar');
+     }
+})
+
+
+
+
+
+
 
 
 crearAreaProyectos();
